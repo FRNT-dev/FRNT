@@ -72,3 +72,7 @@ yarn.lock
 
 # Static site
 _site
+
+# 11ty
+netlify/functions/instant/**/*
+!netlify/functions/instant/index.js
