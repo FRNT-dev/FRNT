@@ -1,3 +1,8 @@
+[functions]
+directory = "netlify/functions"
+node_bundler = "esbuild"
+
+
 [[redirects]]
 from = "posts/picture-perfect-cropping-with-hotspots/index.html"
 to = "/.netlify/builders/instant"
