@@ -1,0 +1,110 @@
+:root {
+  --color-black: #000;
+  --color-almost-black: #202020;
+
+  --color-white: #fff;
+  --color-almost-white: #eaeaea;
+
+  --color-pink-light: #fe00c9;
+  --color-pink-dark: #bd0096;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-black);
+    --color-bg-tint: var(--color-almost-black);
+    --color-main: var(--color-almost-white);
+    --color-bright: var(--color-white);
+    --color-contrast: var(--color-pink-light);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: var(--color-white);
+    --color-bg-tint: var(--color-almost-white);
+    --color-main: var(--color-almost-black);
+    --color-bright: var(--color-black);
+    --color-contrast: var(--color-pink-dark);
+  }
+}
+
+[data-theme="dark"] {
+  --color-bg: var(--color-black);
+  --color-bg-tint: var(--color-almost-black);
+  --color-main: var(--color-almost-white);
+  --color-bright: var(--color-white);
+  --color-contrast: var(--color-pink-light);
+}
+
+[data-theme="light"] {
+  --color-bg: var(--color-white);
+  --color-bg-tint: var(--color-almost-white);
+  --color-main: var(--color-almost-black);
+  --color-bright: var(--color-black);
+  --color-contrast: var(--color-pink-dark);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-main);
+}
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: var(--color-bg-tint);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: var(--color-main);
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: var(--color-contrast);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

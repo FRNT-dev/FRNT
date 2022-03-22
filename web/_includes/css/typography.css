@@ -1,0 +1,43 @@
+/* roboto-slab-300 - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/roboto-slab-v22-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-slab-v22-latin-300.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* tomorrow-600 - latin */
+@font-face {
+  font-family: "Tomorrow";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/tomorrow-v13-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/tomorrow-v13-latin-600.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* work-sans-200 - latin */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 200;
+  src: local(""), url("../fonts/work-sans-v16-latin-200.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/work-sans-v16-latin-200.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* halant-regular - latin */
+@font-face {
+  font-family: "Halant";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/halant-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/halant-v11-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --font-logo: "Tomorrow", "Roboto Slab", arial, helvetica, sans-serif;
+  --font-title: "Roboto Slab", arial, helvetica, sans-serif;
+  --font-heading: "Work Sans", arial, helvetica, sans-serif;
+  --font-body: "Halant", "Times New Roman", times, serif;
+}

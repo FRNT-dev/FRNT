@@ -28,6 +28,9 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
+  eleventyConfig.addPassthroughCopy({ "_includes/fonts": "/fonts" });
+  eleventyConfig.addPassthroughCopy({ "_includes/js": "/js" });
+
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
   let options = {
@@ -47,6 +50,7 @@ module.exports = function (eleventyConfig) {
     const md = new markdownIt(options);
     return md.render(value);
   });
+
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
 

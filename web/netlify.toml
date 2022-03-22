@@ -2,6 +2,19 @@
 directory = "netlify/functions"
 node_bundler = "esbuild"
 
+[[redirects]]
+from = "posts/testy-testy/index.html"
+to = "/.netlify/builders/instant"
+status = 200
+force = true
+_generated_by_eleventy_serverless = "instant"
+
+[[redirects]]
+from = "posts/test-post-2/index.html"
+to = "/.netlify/builders/instant"
+status = 200
+force = true
+_generated_by_eleventy_serverless = "instant"
 
 [[redirects]]
 from = "posts/picture-perfect-cropping-with-hotspots/index.html"
@@ -47,13 +60,6 @@ _generated_by_eleventy_serverless = "instant"
 
 [[redirects]]
 from = "/posts/"
-to = "/.netlify/builders/instant"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "instant"
-
-[[redirects]]
-from = "/posts/*/index.html"
 to = "/.netlify/builders/instant"
 status = 200
 force = true
