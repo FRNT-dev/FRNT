@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm-run-all eleventy build:css",
+    "build": "npm-run-all build:eleventy build:css",
+    "build:11ty": "npx eleventy",
     "build:css": "postcss _includes/style.css --dir _site/css",
     "dev": "concurrently \"npm run watch:css\" \"npm run watch:11ty\"",
     "now-build": "npm run build",
