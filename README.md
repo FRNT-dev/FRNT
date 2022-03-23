@@ -1,5 +1,41 @@
 # FRNT
 
+_An online magazine for front-end developers_
+
+### Why **FRNT**?
+
+Firstly, why not? Having multiple outlets in the marketplace drives us all to be better, and the world of front-end is so huge now that adding another platform for developers to contribute and learn is no bad thing. Additionally, many of the other popular outlets in the dev space aren't specific to front-end; Smashing Magazine is more generalist, A List Apart seemingly publishes whatever it wants, when it wants now and, of the most popular outlets, only CSS Tricks is really focussed on the front-end (and they have just been acquired by Digital Ocean).
+
+### Who runs **FRNT**?
+
+**FRNT** founder and editor: David Eglin ([@djeglin](https://github.com/djeglin))
+
+Want to be on this list? Reach out to me! You can email me at [hello+frnt\[at\]djegl.in](mailto:hello+frnt@djegl.in).
+
+### How will we finance **FRNT**?
+
+### What will we feature on **FRNT**?
+
+### How will **FRNT** be structured?
+
+**FRNT** will release content in "issues" or "editions", much like a print magazine (TODO: Do we go monthly or bi-weekly?). This may seem counter-intuitive for a web-based outlet, but it gives us a number of advantages over more ad-hoc publishing:
+
+1. It allows us to have a well-defined idea of what topic(s) or themes we want to cover in a given issue, and plan for this well in advance
+
+2. Grouping content together into themed issues means that we can get great cross-pollination between content in a given issue, and have other content that is of interest to those reading a piece in that issue
+
+3. It cuts the cognitive overload created by the constant onslaught of new content in our lives as developers. When you read **FRNT**, you know you're not going to be expecting a new content drop until a certain date
+
+4. (In future) is allows us to line up relevant sponsors for a given issue, helping us to finance the running of the site, pay authors and offer relevant, partnered content
+
+### Who will write for **FRNT**?
+
+In short, any front-end developer with an interest in writing a piece will be considered. Obviously, it helps if they have an area of expertise that is relevant to an issue we already have on the calendar, but that isn't a prerequisite.
+
+We encourage people from underrepresented groups in our community to come forward and work with us at **FRNT**. We want to be a force for the betterment of not just the knowledge of our readers, but of the community as a whole and we see representation as being key to that.
+
+## And now the original README contents for the 11ty starter being used here
+
 _Simple blog starter with [11ty](https://11ty.io)._
 
 Deployed from [sanity.io/create](https://www.sanity.io/create/?template=sanity-io%2Fsanity-template-gatsby-blog).
