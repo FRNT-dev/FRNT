@@ -1,3 +1,6 @@
+![FRNT logo](https://www.frnt.dev/img/FRNT-logotype.png#gh-light-mode-only)
+![FRNT logo](https://www.frnt.dev/img/FRNT-logotype-dark.png#gh-dark-mode-only)
+
 # FRNT
 
 _An online magazine for front-end developers_
