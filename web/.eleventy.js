@@ -30,6 +30,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "_includes/fonts": "/fonts" });
   eleventyConfig.addPassthroughCopy({ "_includes/js": "/js" });
+  eleventyConfig.addPassthroughCopy({ "_includes/img": "/img" });
 
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
