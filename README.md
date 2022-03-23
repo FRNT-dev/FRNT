@@ -1,5 +1,5 @@
-![FRNT logo](https://www.frnt.dev/img/FRNT-logotype.png#gh-light-mode-only)
-![FRNT logo](https://www.frnt.dev/img/FRNT-logotype-dark.png#gh-dark-mode-only)
+![FRNT logo](./web/_includes/img/FRNT-logotype.png#gh-light-mode-only)
+![FRNT logo](./web/_includes/img/FRNT-logotype-dark.png#gh-dark-mode-only)
 
 # FRNT
 
