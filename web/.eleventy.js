@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
     functionsDir: "./netlify/functions",
     // redirects: "netlify-toml-builders",
     redirects: false,
+    copy: ["./src/utils"],
   });
 
   eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
@@ -16,6 +17,7 @@ module.exports = function (eleventyConfig) {
     functionsDir: "./netlify/functions",
     // redirects: "netlify-toml",
     redirects: false,
+    copy: ["./src/utils"],
   });
 
   // https://www.11ty.io/docs/quicktips/inline-css/
