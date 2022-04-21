@@ -6,12 +6,12 @@
   "scripts": {
     "build": "npm-run-all build:11ty build:css",
     "build:11ty": "npx eleventy",
-    "build:css": "postcss _includes/style.css --dir _site/css",
+    "build:css": "postcss src/_includes/style.css --dir _site/css",
     "dev": "concurrently \"npm run watch:css\" \"npm run watch:11ty\"",
     "now-build": "npm run build",
     "debug": "DEBUG=* npx eleventy",
     "watch:11ty": "npx eleventy --watch --serve",
-    "watch:css": "postcss --watch _includes/style.css --dir _site/css"
+    "watch:css": "postcss --watch src/_includes/style.css --dir _site/css"
   },
   "keywords": [],
   "author": "",

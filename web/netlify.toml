@@ -3,64 +3,19 @@ directory = "netlify/functions"
 node_bundler = "esbuild"
 
 [[redirects]]
-from = "posts/testy-testy/index.html"
-to = "/.netlify/builders/instant"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "instant"
-
-[[redirects]]
-from = "posts/test-post-2/index.html"
-to = "/.netlify/builders/instant"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "instant"
-
-[[redirects]]
-from = "posts/picture-perfect-cropping-with-hotspots/index.html"
-to = "/.netlify/builders/instant"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "instant"
-
-[[redirects]]
-from = "posts/my-first-introduction-to-portable-text/index.html"
-to = "/.netlify/builders/instant"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "instant"
-
-[[redirects]]
-from = "posts/my-brand-new-blog-powered-by-sanity-io-eleventy/index.html"
-to = "/.netlify/builders/instant"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "instant"
-
-[[redirects]]
-from = "posts/finally-i-found-a-content-management-system-i-can-use-on-my-phone/index.html"
-to = "/.netlify/builders/instant"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "instant"
-
-[[redirects]]
-from = "posts/exploration-powered-by-structured-content/index.html"
-to = "/.netlify/builders/instant"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "instant"
-
-[[redirects]]
-from = "authors/my-name/index.html"
-to = "/.netlify/builders/instant"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "instant"
-
-[[redirects]]
 from = "/posts/"
 to = "/.netlify/builders/instant"
 status = 200
 force = true
-_generated_by_eleventy_serverless = "instant"
+
+[[redirects]]
+from = "/posts/*"
+to = "/.netlify/builders/instant"
+status = 200
+force = true
+
+[[redirects]]
+from = "/preview/*"
+to = "/.netlify/functions/preview"
+status = 200
+force = true

@@ -5,16 +5,16 @@ const { EleventyServerless } = require("@11ty/eleventy");
 require("./eleventy-bundler-modules.js");
 
 async function handler(event) {
-  let elev = new EleventyServerless("instant", {
+  let elev = new EleventyServerless("preview", {
     path: event.path,
     query: event.queryStringParameters,
     functionsDir: "./netlify/functions",
   });
 
   try {
-    const { path } = event;
+    const slug = event.path.replace("/preview/", "");
     const output = await elev.getOutput();
-    const page = output.find((p) => p.url === path);
+    const page = output.find((p) => p.url === `/posts/${slug}`);
     console.log(page);
 
     // If you want some of the data cascade available in `page.data`, use `eleventyConfig.dataFilterSelectors`.
@@ -52,7 +52,7 @@ async function handler(event) {
 // * Runs on first request only: Netlify On-demand Builder
 //   (don’t forget to `npm install @netlify/functions`)
 
-// exports.handler = handler;
+exports.handler = handler;
 
-const { builder } = require("@netlify/functions");
-exports.handler = builder(handler);
+//const { builder } = require("@netlify/functions");
+//exports.handler = builder(handler);

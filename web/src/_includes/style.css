@@ -16,10 +16,24 @@ header {
   margin: 0 auto;
   max-width: 1400px;
   padding-top: 1rem;
+  color: black;
+  filter: invert(1);
+  mix-blend-mode: difference;
 }
 
 .nav {
   margin-right: 2rem;
+
+  a:link,
+  a:visited {
+    color: var(--color-black);
+    background-image: linear-gradient(transparent 50%, var(--color-black) 0);
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: var(--color-bright);
+  }
 }
 
 main {
@@ -69,7 +83,7 @@ a.home:active,
 a.home:focus {
   display: inline-block;
   font-size: 2.1rem;
-  color: var(--font-bright);
+  color: inherit;
   outline: none;
   background: transparent;
   margin-right: auto;
@@ -208,9 +222,11 @@ a:visited {
   background: linear-gradient(transparent 50%, var(--color-contrast) 0);
   background-size: 100% 200%;
   background-position: left top;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
 }
-a:hover {
+a:hover,
+a:active,
+a:focus {
   color: var(--color-bg);
   background-position: left bottom;
 }

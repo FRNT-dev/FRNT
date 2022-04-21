@@ -1,0 +1,18 @@
+---
+layout: layouts/post
+tags:
+  - myPosts
+pagination:
+  alias: post
+  data: posts
+  size: 1
+  addAllPagesToCollections: true
+  instant: eleventy.serverless.path.slug
+  preview: eleventy.serverless.path.slug
+permalink:
+  build: /posts/{{ post.slug }}/
+  instant: /posts/{{ post.slug }}/
+  preview: /preview/{{ post.slug }}/
+---
+
+

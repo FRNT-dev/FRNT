@@ -7,6 +7,8 @@
 
   --color-pink-light: #fe00c9;
   --color-pink-dark: #bd0096;
+
+  --color-lime: #01ff36;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -94,7 +96,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: var(--color-contrast);
+  background-color: var(--color-black);
 }
 
 input:checked + .slider:before {

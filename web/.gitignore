@@ -76,3 +76,6 @@ _site
 # 11ty
 netlify/functions/instant/**/*
 !netlify/functions/instant/index.js
+netlify/functions/preview/**/*
+!netlify/functions/preview/index.js
+.netlify/**

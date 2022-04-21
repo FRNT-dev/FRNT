@@ -7,7 +7,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
     name: "instant",
     functionsDir: "./netlify/functions",
-    redirects: "netlify-toml-builders",
+    // redirects: "netlify-toml-builders",
+    redirects: false,
+  });
+
+  eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
+    name: "preview",
+    functionsDir: "./netlify/functions",
+    // redirects: "netlify-toml",
+    redirects: false,
   });
 
   // https://www.11ty.io/docs/quicktips/inline-css/
@@ -28,9 +36,9 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
-  eleventyConfig.addPassthroughCopy({ "_includes/fonts": "/fonts" });
-  eleventyConfig.addPassthroughCopy({ "_includes/js": "/js" });
-  eleventyConfig.addPassthroughCopy({ "_includes/img": "/img" });
+  eleventyConfig.addPassthroughCopy({ "src/_includes/fonts": "/fonts" });
+  eleventyConfig.addPassthroughCopy({ "src/_includes/js": "/js" });
+  eleventyConfig.addPassthroughCopy({ "src/_includes/img": "/img" });
 
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
@@ -66,7 +74,7 @@ module.exports = function (eleventyConfig) {
     dataTemplateEngine: "njk",
     passthroughFileCopy: true,
     dir: {
-      input: ".",
+      input: "./src",
       includes: "_includes",
       data: "_data",
       output: "_site",
