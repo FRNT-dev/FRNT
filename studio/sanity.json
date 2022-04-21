@@ -25,11 +25,15 @@
     },
     {
       "name": "part:@sanity/desk-tool/structure",
-      "path": "./deskStructure.js"
+      "path": "./parts/deskStructure.js"
     },
     {
       "implements": "part:@sanity/dashboard/config",
-      "path": "dashboardConfig.js"
+      "path": "./parts/dashboardConfig.js"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "./parts/logo/brandLogo.js"
     }
   ]
 }
