@@ -15,7 +15,7 @@ async function handler(event) {
     const slug = event.path.replace("/preview/", "");
     const output = await elev.getOutput();
     const page = output.find((p) => p.url === `/posts/${slug}`);
-    console.log(page);
+    // console.log(page);
 
     // If you want some of the data cascade available in `page.data`, use `eleventyConfig.dataFilterSelectors`.
     // Read more: https://www.11ty.dev/docs/config/#data-filter-selectors
