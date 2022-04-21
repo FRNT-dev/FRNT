@@ -2,6 +2,18 @@
 directory = "netlify/functions"
 node_bundler = "esbuild"
 
+[functions.instant]
+included_files = [
+  "./netlify/functions/instant/**/*",
+  "./netlify/functions/instant/.cache/**/*"
+]
+
+[functions.preview]
+included_files = [
+  "./netlify/functions/preview/**/*",
+  "./netlify/functions/preview/.cache/**/*"
+]
+
 [[redirects]]
 from = "/posts/"
 to = "/.netlify/builders/instant"
